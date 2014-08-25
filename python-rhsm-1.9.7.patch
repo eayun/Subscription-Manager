@@ -1,3 +1,22 @@
+diff -uNr python-rhsm-1.9.7/etc-conf/ca/candlepin-ca.pem python-rhsm-1.9.7-new/etc-conf/ca/candlepin-ca.pem
+--- python-rhsm-1.9.7/etc-conf/ca/candlepin-ca.pem	1970-01-01 08:00:00.000000000 +0800
++++ python-rhsm-1.9.7-new/etc-conf/ca/candlepin-ca.pem	2014-08-26 02:33:35.692000021 +0800
+@@ -0,0 +1,15 @@
++-----BEGIN CERTIFICATE-----
++MIICSDCCAbGgAwIBAgIJAIML4fA8aEQPMA0GCSqGSIb3DQEBBQUAMD0xHDAaBgNV
++BAMME2NhbmRsZXBpbi5lYXl1bi5jb20xCzAJBgNVBAYTAlVTMRAwDgYDVQQHDAdS
++YWxlaWdoMB4XDTE0MDcyNTAzNTgyMFoXDTE1MDcyNTAzNTgyMFowPTEcMBoGA1UE
++AwwTY2FuZGxlcGluLmVheXVuLmNvbTELMAkGA1UEBhMCVVMxEDAOBgNVBAcMB1Jh
++bGVpZ2gwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOMIsKeb9cYw2BGr/IbP
++FXbHXVjyqpud0vZP2ckO7hEGFx1QiJAoImitP9HUOm4TN5tI/TQmfOH16GZnYm6j
++JWJgM1ef5rifZYqfX3GHKK3l1Z0B6FMQ1mJHSt663pk64FGZPjLNDkstw6nGSxsG
++4iNKkRh4dxJaZL/2ybhmH+FXAgMBAAGjUDBOMB0GA1UdDgQWBBQqdLWz1HfSJTVz
++V8TeZcv1rRkZPjAfBgNVHSMEGDAWgBQqdLWz1HfSJTVzV8TeZcv1rRkZPjAMBgNV
++HRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAM/V8UzT3+IJsvlTmdV7aHNW167M
++IfkZofpWZXIe7wP16OqKzLjVhcIKkaUg9ooTqe6MiduVck+htzw/Ih2N7O3mqLO8
++Qr24lm2PFxrIc9L4O7bcCCEeWuBK7JgZKCc8tpRBfC25hjaZkToL+04ejSdCoDwZ
++QcC3nJbWDLMbXysp
++-----END CERTIFICATE-----
 diff -uNr python-rhsm-1.9.7/etc-conf/ca/candlepin-stage.pem python-rhsm-1.9.7-new/etc-conf/ca/candlepin-stage.pem
 --- python-rhsm-1.9.7/etc-conf/ca/candlepin-stage.pem	2014-05-17 03:01:36.000000000 +0800
 +++ python-rhsm-1.9.7-new/etc-conf/ca/candlepin-stage.pem	1970-01-01 08:00:00.000000000 +0800
@@ -43,25 +62,6 @@ diff -uNr python-rhsm-1.9.7/etc-conf/ca/candlepin-stage.pem python-rhsm-1.9.7-ne
 -g6EHdPrR+A==
 ------END CERTIFICATE-----
 -
-diff -uNr python-rhsm-1.9.7/etc-conf/ca/canlepin-ca.pem python-rhsm-1.9.7-new/etc-conf/ca/canlepin-ca.pem
---- python-rhsm-1.9.7/etc-conf/ca/canlepin-ca.pem	1970-01-01 08:00:00.000000000 +0800
-+++ python-rhsm-1.9.7-new/etc-conf/ca/canlepin-ca.pem	2014-08-20 07:54:23.012000014 +0800
-@@ -0,0 +1,15 @@
-+-----BEGIN CERTIFICATE-----
-+MIICSDCCAbGgAwIBAgIJAJOaXiIDA3HzMA0GCSqGSIb3DQEBBQUAMD0xHDAaBgNV
-+BAMME2NhbmRsZXBpbi5lYXl1bi5jb20xCzAJBgNVBAYTAlVTMRAwDgYDVQQHDAdS
-+YWxlaWdoMB4XDTE0MDgxOTIyNTY1M1oXDTE1MDgxOTIyNTY1M1owPTEcMBoGA1UE
-+AwwTY2FuZGxlcGluLmVheXVuLmNvbTELMAkGA1UEBhMCVVMxEDAOBgNVBAcMB1Jh
-+bGVpZ2gwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALl/xQP8ts6fUr//qgYL
-+UGbFkTW2Il9gDxK7BW7N3LHN/xXayYY+rVz8NylE2dbU1LxC9o5YDOVlUBPjrA0N
-+tV99HOVxvVukWASP17DILRHCEUfFXNko74Ujet8iHMgZqtL8dsHBMPrmr5E+iST5
-+1XNvbdfyV9RA3dIs5tlKctu1AgMBAAGjUDBOMB0GA1UdDgQWBBQIhxAT+rU0sc5/
-+mdPDykEkERb9FjAfBgNVHSMEGDAWgBQIhxAT+rU0sc5/mdPDykEkERb9FjAMBgNV
-+HRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBABZteQk65Z3ZpLfqQ2d8v4n4udMi
-+YnVyHszQoMLmirSeYewons0NrRf5pc29jOxG+qtv1Cmm850aVoXefW4dA2jGyBy8
-+fZNI4c1iX9akwZKa9Y+KEAqiNg+TepY7ii+4TN0z+8BrdaQLew6ItG896Tkx/ZI8
-+zYkNaY6pihZxAw+7
-+-----END CERTIFICATE-----
 diff -uNr python-rhsm-1.9.7/etc-conf/ca/redhat-uep.pem python-rhsm-1.9.7-new/etc-conf/ca/redhat-uep.pem
 --- python-rhsm-1.9.7/etc-conf/ca/redhat-uep.pem	2014-05-17 03:01:36.000000000 +0800
 +++ python-rhsm-1.9.7-new/etc-conf/ca/redhat-uep.pem	1970-01-01 08:00:00.000000000 +0800
