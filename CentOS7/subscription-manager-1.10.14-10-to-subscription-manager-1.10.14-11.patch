@@ -1,0 +1,36 @@
+diff -uNr subscription-manager-1.10.14/etc-conf/rhsm.conf subscription-manager-1.10.14-new/etc-conf/rhsm.conf
+--- subscription-manager-1.10.14/etc-conf/rhsm.conf	2014-02-12 04:13:29.000000000 +0800
++++ subscription-manager-1.10.14-new/etc-conf/rhsm.conf	2014-11-17 14:12:45.422429674 +0800
+@@ -3,13 +3,13 @@
+ # Unified Entitlement Platform Configuration
+ [server]
+ # Server hostname:
+-hostname = subscription.rhn.redhat.com
++hostname = candlepin.eayun.com
+ 
+ # Server prefix:
+-prefix = /subscription
++prefix = /candlepin
+ 
+ # Server port:
+-port = 443
++port = 8443
+ 
+ # Set to 1 to disable certificate validation:
+ insecure = 0
+@@ -32,13 +32,13 @@
+ 
+ [rhsm]
+ # Content base URL:
+-baseurl= https://cdn.redhat.com
++baseurl= https://pulp.zhaochao.eayunos.eayun.com/pulp/repos
+ 
+ # Server CA certificate location:
+ ca_cert_dir = /etc/rhsm/ca/
+ 
+ # Default CA cert to use when generating yum repo configs:
+-repo_ca_cert = %(ca_cert_dir)sredhat-uep.pem
++repo_ca_cert = %(ca_cert_dir)scandlepin-ca.pem
+ 
+ # Where the certificates should be stored
+ productCertDir = /etc/pki/product
